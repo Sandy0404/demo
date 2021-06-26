@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>國立嘉義大學</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="wrapper">
+    <div id="header">
+        <h1><a href="index.html">國立嘉義大學</a></h1>
+        <p class="copy">工讀生申請表</p>
+
+        <ul id="navi">
+            <!-- 導覽列從此開始 -->
+            <li id="navi_01">
+                <a href="#">新增資料</a>
+                <ul id="a1">
+                    <li><a href="insert.html">基本資料</a>
+                    </li>
+                    <li><a href="#">成績</a>
+                    </li>
+                    <li><a href="#">家庭概況</a>
+                    </li>
+					<li><a href="#">申請工讀資格</a>
+                    </li>
+                </ul>
+            </li>
+			
+			
+			
+            <li id="navi_02">
+                <a href="search.html">查詢資料</a>
+            </li>
+            <li id="navi_03">
+                <a href="update.html">修改資料</a>
+				<ul id="a1">
+                    <li><a href="mssql_input_update.php">基本資料</a>
+                    </li>
+                    <li><a href="mssql_input_update1.php">成績</a>
+                    </li>
+                    <li><a href="mssql_input_update2.php">家庭概況</a>
+                    </li>
+					<li><a href="mssql_input_update3.php">申請工讀資格</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="navi_04">
+                <a href="report.html">分析報表</a>
+            </li>
+            <li id="navi_05">
+                <a href="DB.html">系統手冊</a>
+            </li>
+            <!-- 導覽列到此為止 -->
+        </ul>
+
+    </div>
+
+    <div id="contents">
+        <form name="form" action="http://127.0.0.1/demo/report.php" method="POST" accept-charset="UTF-8" align="center">
+            <div class="detail_box clearfix">
+                <div class="link_box">
+                    <h3>顯示全部資料</h3>
+                    <ul>
+                        <li>
+                            <input type="varchar(50)" name="name" size="30">
+                        </li>
+						
+						
+						
+                        
+                        <input type="submit" align="right" value="送出">
+                        </br>
+                    </ul>
+                </div>
+            </div>
+        </form>
+</body>
+
+</html>
