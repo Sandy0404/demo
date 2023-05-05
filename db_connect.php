@@ -1,6 +1,6 @@
 <?php
      header("Content-Type:text/html; charset=utf-8");
-     $serverName="DESKTOP-933EBBG\SQLEXPRESS";
+     $serverName=".";
      $connectionInfo=array("Database"=>"test1","UID"=>"sandy123","PWD"=>"user0404","CharacterSet" => "UTF-8");
      $conn=sqlsrv_connect($serverName,$connectionInfo);
          if($conn){

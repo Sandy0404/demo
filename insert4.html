@@ -22,27 +22,24 @@
                     </li>
                     <li><a href="insert3.html">家庭概況</a>
                     </li>
-     <li><a href="insert4.html">申請工讀資格</a>
+                    <li><a href="insert4.html">申請工讀資格</a>
                     </li>
                 </ul>
             </li>
-   
-   
-   
-   
+
             <li id="navi_02">
                 <a href="search.html">查詢資料</a>
             </li>
             <li id="navi_03">
                 <a href="update.html">修改資料</a>
-				<ul id="a1">
+                <ul id="a1">
                     <li><a href="mssql_input_update.php">基本資料</a>
                     </li>
                     <li><a href="mssql_input_update1.php">成績</a>
                     </li>
                     <li><a href="mssql_input_update2.php">家庭概況</a>
                     </li>
-					<li><a href="mssql_input_update3.php">申請工讀資格</a>
+                    <li><a href="mssql_input_update3.php">申請工讀資格</a>
                     </li>
                 </ul>
             </li>
@@ -55,55 +52,68 @@
             <!-- 導覽列到此為止 -->
         </ul>
     </div>
+
     <div id="contents">
-      <form name="form" action="http://127.0.0.1/demo/insert4.php" method="POST" accept-charset="UTF-8" align="center">
+        <form name="form" action="http://127.0.0.1/demo/insert4.php" method="POST" accept-charset="UTF-8"
+            align="center">
             <div class="detail_box clearfix">
                 <div class="link_box">
-      <ul>
-      <h3>申請工讀資格</h3>
-      <li>
-      學號: <input type="varchar(50)" name="id1" size="30"> <br/><br/>
-      </li>
-      <h1>可工讀時間：</h1>
-      <select name="time">
-      <option selected>白天工讀</option>
-      <option value="Taoyuan">夜間工讀</option>
-      <option value="Hsinchu">進修部相關單位工讀</option>
-      </select>
-      <h1>擬工讀單位：</h1>
-      <select name="unit">
-      <option selected>行政單位</option>
-      <option value="Taoyuan">圖書館</option>
-      <option value="Hsinchu">語言中心</option>
-      <option value="Miaolai">電算中心</option>
-      <option value="Miaolid">環安中心</option>
-      <option value="Miaolis">均可</option>
-      </select>
-      <h1>工作志願及專長：</h1>
-      <select name="expertise">
-      <option selected>文書工作</option>
-      <option value="Taoyuan">辦公室/研究室清潔維護</option>
-      <option value="Hsinchu">校園清潔維護</option>
-      <option value="Miaolaasdi">電腦</option>
-      <option value="Miaoasdfli">美術海報設計</option>
-      <option value="Miaolif">其他</option>
-      </select>
-      <h1>申請資格：</h1>
-      <select name="application_form">
-      <option selected>經濟弱勢學生</option>
-      <option value="Taoyuan">具有專長之學生</option>
-      </select>
-      <li>
-      導師簽章:&nbsp&nbsp
-      <textarea name="signature" rows="5" cols="33"></textarea>
-      </li>
-      <input type="reset" value="清除表單">
-      <input type="submit" align="right" value="送出"></br>
-      </ul>
+
+                    <h3>申請工讀資格</h3>
+                    <ul>
+                        <li>
+                            學號: <input type="varchar(50)" name="id1" size="20">
+                        </li>
+
+                        可工讀時間：
+                        <select name="time">
+                            <option Value="白天工讀" selected>白天工讀</option>
+                            <option Value="夜間工讀">夜間工讀</option>
+                            <option Value="進修部相關單位工讀">進修部相關單位工讀</option>
+                        </select>
+                        <br />
+                        <br />
+                        擬工讀單位：
+                        <select name="unit">
+                            <option Value="行政單位" selected>行政單位</option>
+                            <option Value="圖書館">圖書館</option>
+                            <option Value="語言中心">語言中心</option>
+                            <option Value="電算中心">電算中心</option>
+                            <option Value="環安中心">環安中心</option>
+                            <option Value="均可">均可</option>
+                        </select>
+                        <br />
+                        <br />
+                        工作志願及專長：
+                        <select name="expertise">
+                            <option Value="文書工作" selected>文書工作</option>
+                            <option Value="辦公室/研究室清潔維護">辦公室/研究室清潔維護</option>
+                            <option Value="校園清潔維護">校園清潔維護</option>
+                            <option Value="電腦">電腦</option>
+                            <option Value="美術海報設計">美術海報設計</option>
+                            <option Value="其他">其他</option>
+                        </select>
+                        <br />
+                        <br />
+                        申請資格：
+                        <select name="application_form">
+                            <option Value="經濟弱勢學生" selected>經濟弱勢學生</option>
+                            <option Value="具有專長之學生">具有專長之學生</option>
+                        </select>
+                        <br />
+                        <br />
+                        <li>
+                            導師:&nbsp&nbsp
+                            <textarea name="signature" rows="1" cols="20"></textarea>
+                        </li>
+
+                        <input type="reset" value="清除表單">
+                        <input type="submit" align="right" value="送出"></br>
+                    </ul>
+                </div>
+            </div>
+        </form>
     </div>
-  </div>
-</form>
-</div>
 </body>
 
 </html>
